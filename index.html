@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/1d29cd001d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div id="panel" class="panel">
+      <div id="first" class="first">
+        <div>
+          <div class="dc-name">
+            <span>DC</span>
+          <p>Davii Collections</p>
+          </div>
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-store"></i>
+         <a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc"><p>All stores</p></a>
+        </div>
+      </div>
+
+      <div id="second" class="second">
+        <ul>
+          <li><a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc">Help Center</a></li>
+          <li><a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc">Changelog</a></li>
+          <li><a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc">Community forums</a></li>
+          <li><a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc">Hire a Shopify Partner</a></li>
+          <li><a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc">Keyboard shortcuts</a></li>
+        </ul>
+      </div>
+
+      <div id="third" class="third">
+        <a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc"><p>David Micheal <span>davidmicheal@gmail.com</span></p></a>
+        <a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc"><p>Manage account</p></a>
+        <a href="https://accounts.shopify.com/lookup?rid=3e7954ba-3a5c-433d-9912-a5470bd8d8bc"><p>Log out</p></a>
+      </div>
+    </div>
+
+    <div id="notification-panel" class="notification-panel">
+      <div id="upper" class="upper">
+        <p>Alerts</p>
+        <div>
+          <?xml version="1.0" ?><svg class="bi bi-filter" fill="currentColor" height="16" viewBox="0 0 16 16" width="16"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+          </svg>
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+      </div>
+      <div id="lower" class="lower">
+        <p>Alerts about your store and account will show here</p>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="logo">
+        <a href="https://www.shopify.com/"><img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt=""></a>
+      </div>
+      <div class="search">
+        <input type="search" class="fontAwesome" name="search" id="searchInput" placeholder="&#xf002; Search">
+      </div>
+      <div class="profile">
+        <div id="notif" class="notif">
+          <i id="notif-open" class="fa-regular fa-bell"></i>
+          <i id="notif-close" class="fa-regular fa-bell"></i>
+        </div>
+        <div id="profile-name" class="profile-name">
+          <p>Davii Collections</p>
+          <span>DC</span>
+        </div>
+
+        <div id="profile-name-close" class="profile-name">
+          <p>Davii Collections</p>
+          <span>DC</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div id="plan" class="plan">
+        <div class="sentence">
+          <p>Extend your trial for $1/month for 3 months on select plans.</p>
+        </div>
+        <div>
+          <p><a href="https://www.shopify.com/pricing">Select a plan</a></p>
+          <i id="cancel-plan" class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <div class="guide">
+        <div class="guide-content-container">
+          <div class="guide-content">
+            <h1>Setup guide</h1>
+            <p>Use this personalized guide to get your store up and running.</p>
+            <div class="progress">
+              <p><span id="step-number">0</span>/5 completed</p>
+              <div id="progress-bar-container" class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <i id="progress-open" class="fa-solid fa-angle-down"></i>
+            <i id="progress-close" class="fa-solid fa-angle-up"></i>
+          </div>
+        </div>
+
+        <div id="instructions" class="instructions">
+          <div id="one-div" class="one">
+            <div class="left">
+              <div>
+                <!-- <?xml version="1.0" ?><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="none" height="256" width="256" />
+                  <path d="M35.3,103.1a96.4,96.4,0,0,1,24.8-43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M60.1,195.9a95.7,95.7,0,0,1-24.8-43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M152.9,220.7a94.2,94.2,0,0,1-49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M220.7,152.9a96.4,96.4,0,0,1-24.8,43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M195.9,60.1a95.7,95.7,0,0,1,24.8,43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M103.1,35.3a94.2,94.2,0,0,1,49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                </svg> -->
+
+                <i id="icon1" class="fa-solid fa-spinner" onclick="slideIcons()"></i>
+              </div>
+              <div class="left-writeup">
+                <h1>Customize your online store</h1>
+                <p id="one-p">Choose a theme and add your logo, colors and images to reflect your brand.</p>
+                <span id="one-span">Learn more</span>
+                <button id="one-button">Customize theme</button>
+              </div>
+            </div>
+            <div>
+              <img id="one-img" src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="">
+            </div>
+          </div>
+
+          <div id="two-div" class="two">
+            <div class="left">
+              <div>
+                <!-- <?xml version="1.0" ?><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="none" height="256" width="256" />
+                  <path d="M35.3,103.1a96.4,96.4,0,0,1,24.8-43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M60.1,195.9a95.7,95.7,0,0,1-24.8-43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M152.9,220.7a94.2,94.2,0,0,1-49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M220.7,152.9a96.4,96.4,0,0,1-24.8,43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M195.9,60.1a95.7,95.7,0,0,1,24.8,43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M103.1,35.3a94.2,94.2,0,0,1,49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                </svg> -->
+
+                <i id="icon2" class="fa-solid fa-spinner" onclick="slideIcons2()"></i>
+              </div>
+              <div class="left-writeup">
+                <h1>Add your first product</h1>
+                <p id="two-p">Write a description, add photos, and set pricing for the products you plan to sell.</p>
+                <span id="two-span">Learn more</span>
+                <div id="two-button" class="button-div">
+                  <button>Add product</button>
+                  <button id="import">Import product</button>
+                </div>
+              </div>
+            </div>
+            <div id="two-img">
+              <img src="https://crushingit.tech/hackathon-assets/product.png" alt="">
+            </div>
+          </div>
+
+          <div id="three-div" class="three">
+            <div class="left">
+              <div>
+                <!-- <?xml version="1.0" ?><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="none" height="256" width="256" />
+                  <path d="M35.3,103.1a96.4,96.4,0,0,1,24.8-43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M60.1,195.9a95.7,95.7,0,0,1-24.8-43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M152.9,220.7a94.2,94.2,0,0,1-49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M220.7,152.9a96.4,96.4,0,0,1-24.8,43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M195.9,60.1a95.7,95.7,0,0,1,24.8,43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M103.1,35.3a94.2,94.2,0,0,1,49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                </svg> -->
+
+                <i id="icon3" class="fa-solid fa-spinner" onclick="slideIcons3()"></i>
+              </div>
+              <div class="left-writeup">
+                <h1>Add a custom domain</h1>
+                <p id="three-p">Your current domain is 222219.myshopify.com but you can add a custom domain to help customers find
+                  your online store.</p>
+                <span id="three-span">Learn more</span>
+                <button id="three-button">Add domain</button>
+              </div>
+            </div>
+            <div>
+              <img id="three-img" src=" https://crushingit.tech/hackathon-assets/website.png" alt="">
+            </div>
+          </div>
+
+          <div id="four-div" class="four">
+            <div class="left">
+              <div>
+                <!-- <?xml version="1.0" ?><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="none" height="256" width="256" />
+                  <path d="M35.3,103.1a96.4,96.4,0,0,1,24.8-43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M60.1,195.9a95.7,95.7,0,0,1-24.8-43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M152.9,220.7a94.2,94.2,0,0,1-49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M220.7,152.9a96.4,96.4,0,0,1-24.8,43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M195.9,60.1a95.7,95.7,0,0,1,24.8,43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M103.1,35.3a94.2,94.2,0,0,1,49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                </svg> -->
+
+                <i id="icon4" class="fa-solid fa-spinner" onclick="slideIcons4()"></i>
+              </div>
+              <div class="left-writeup">
+                <h1>Name your store</h1>
+                <p id="four-p">Your temporary store name is currently Davii Collections. The store name appears in your admin and
+                  your online store.</p>
+                <span id="four-span">Learn more</span>
+                <button id="four-button">Name store</button>
+              </div>
+            </div>
+            <div>
+              <img id="four-img" src="https://crushingit.tech/hackathon-assets/name-store.png" alt="">
+            </div>
+          </div>
+
+          <div id="five-div" class="five">
+            <div class="left">
+              <div>
+                <!-- <?xml version="1.0" ?><svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="none" height="256" width="256" />
+                  <path d="M35.3,103.1a96.4,96.4,0,0,1,24.8-43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M60.1,195.9a95.7,95.7,0,0,1-24.8-43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M152.9,220.7a94.2,94.2,0,0,1-49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M220.7,152.9a96.4,96.4,0,0,1-24.8,43" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M195.9,60.1a95.7,95.7,0,0,1,24.8,43.1" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                  <path d="M103.1,35.3a94.2,94.2,0,0,1,49.7,0" fill="none" stroke="#000" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="8" />
+                </svg> -->
+
+                <i id="icon5" class="fa-solid fa-spinner" onclick="slideIcons5()"></i>
+              </div>
+              <div class="left-writeup">
+                <h1>Setup a payment provider</h1>
+                <p id="five-p">Choose a payment provider to start accepting payments. You’ll need to create an account with the
+                  payment provider and
+                  set it up with your Shopify store.</p>
+                <span id="five-span">Learn more</span>
+                <button id="five-button">Setup payment</button>
+              </div>
+            </div>
+            <div>
+              <img id="five-img" src="https://crushingit.tech/hackathon-assets/payment.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
