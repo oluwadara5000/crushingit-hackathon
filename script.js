@@ -44,11 +44,11 @@ const threeImg = document.getElementById("three-img");
 const fourImg = document.getElementById("four-img");
 const fiveImg = document.getElementById("five-img");
 
-const icon1 = document.getElementById("icon1");
-const icon2 = document.getElementById("icon2");
-const icon3 = document.getElementById("icon3");
-const icon4 = document.getElementById("icon4");
-const icon5 = document.getElementById("icon5");
+const checkbox1 = document.getElementById("checkbox1");
+const checkbox2 = document.getElementById("checkbox2");
+const checkbox3 = document.getElementById("checkbox3");
+const checkbox4 = document.getElementById("checkbox4");
+const checkbox5 = document.getElementById("checkbox5");
 
 const progressBar = document.getElementById("progress-bar");
 const stepNumber = document.getElementById("step-number");
@@ -85,6 +85,10 @@ threeImg.style.display = "none";
 fourImg.style.display = "none";
 fiveImg.style.display = "none";
 
+var windowWidth = window.innerWidth;
+
+var thresholdWidth = 390
+
 progressOpen.addEventListener("click", function () {
   progressClose.style.display = "block";
   progressOpen.style.display = "none";
@@ -95,6 +99,14 @@ progressOpen.addEventListener("click", function () {
   oneImg.style.display = "block";
   oneDiv.style.backgroundColor = "#F3F3F3";
   oneDiv.style.borderRadius = "10px";
+  
+  if (windowWidth < thresholdWidth) {
+    oneImg.style.display = "none"
+    twoImg.style.display = "none"
+    threeImg.style.display = "none"
+    fourImg.style.display = "none"
+    fiveImg.style.display = "none";
+  }
 });
 
 progressClose.addEventListener("click", function () {
@@ -150,165 +162,274 @@ cancelPlan.addEventListener("click", function () {
   plan.style.display = "none";
 });
 
-icon1.addEventListener("click", function () {
-  oneP.style.display = "none";
-  oneSpan.style.display = "none";
-  oneButton.style.display = "none";
-  oneImg.style.display = "none";
-  twoP.style.display = "block";
-  twoSpan.style.display = "block";
-  twoButton.style.display = "block";
-  twoImg.style.display = "block";
-  oneDiv.style.backgroundColor = "transparent";
-  oneDiv.style.borderRadius = "0";
-  twoDiv.style.backgroundColor = "#F3F3F3";
-  twoDiv.style.borderRadius = "10px";
-  progressBar.style.width = "20%";
-  stepNumber.innerHTML = "1";
+checkbox1.addEventListener("change", function () {
+  if (checkbox1.checked) {
+    oneP.style.display = "none";
+    oneSpan.style.display = "none";
+    oneButton.style.display = "none";
+    oneImg.style.display = "none";
+    twoP.style.display = "block";
+    twoSpan.style.display = "block";
+    twoButton.style.display = "block";
+    twoImg.style.display = "block";
+    oneDiv.style.backgroundColor = "transparent";
+    oneDiv.style.borderRadius = "0";
+    oneDiv.style.marginBottom = "15px";
+    twoDiv.style.backgroundColor = "#F3F3F3";
+    twoDiv.style.borderRadius = "10px";
+    progressBar.style.width = "20%";
+    stepNumber.innerHTML = "1"
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  } else {
+    oneP.style.display = "block";
+    oneSpan.style.display = "block";
+    oneButton.style.display = "block";
+    oneImg.style.display = "block";
+    twoP.style.display = "none";
+    twoSpan.style.display = "none";
+    twoButton.style.display = "none";
+    twoImg.style.display = "none";
+    oneDiv.style.backgroundColor = "#F3F3F3";
+    oneDiv.style.borderRadius = "10px";
+    oneDiv.style.marginBottom = "15px";
+    twoDiv.style.backgroundColor = "transparent";
+    twoDiv.style.borderRadius = "0";
+    progressBar.style.width = "0";
+    stepNumber.innerHTML = "0";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  }
 });
 
-icon2.addEventListener("click", function () {
-  // oneP.style.display = "none";
-  // oneSpan.style.display = "none";
-  // oneButton.style.display = "none";
-  // oneImg.style.display = "none";
-  twoP.style.display = "none";
-  twoSpan.style.display = "none";
-  twoButton.style.display = "none";
-  twoImg.style.display = "none";
-  threeP.style.display = "block";
-  threeSpan.style.display = "block";
-  threeButton.style.display = "block";
-  threeImg.style.display = "block";
-  twoDiv.style.backgroundColor = "transparent";
-  twoDiv.style.borderRadius = "0";
-  threeDiv.style.backgroundColor = "#F3F3F3";
-  threeDiv.style.borderRadius = "10px";
-  progressBar.style.width = "40%";
-  stepNumber.innerHTML = "2";
+checkbox2.addEventListener("change", function () {
+  if (checkbox2.checked) {
+    twoP.style.display = "none";
+    twoSpan.style.display = "none";
+    twoButton.style.display = "none";
+    twoImg.style.display = "none";
+    threeP.style.display = "block";
+    threeSpan.style.display = "block";
+    threeButton.style.display = "block";
+    threeImg.style.display = "block";
+    twoDiv.style.backgroundColor = "transparent";
+    twoDiv.style.borderRadius = "0";
+    twoDiv.style.marginBottom = "15px";
+    threeDiv.style.backgroundColor = "#F3F3F3";
+    threeDiv.style.borderRadius = "10px";
+    progressBar.style.width = "40%";
+    stepNumber.innerHTML = "2";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  } else {
+    twoP.style.display = "block";
+    twoSpan.style.display = "block";
+    twoButton.style.display = "block";
+    twoImg.style.display = "block";
+    threeP.style.display = "none";
+    threeSpan.style.display = "none";
+    threeButton.style.display = "none";
+    threeImg.style.display = "none";
+    twoDiv.style.backgroundColor = "#F3F3F3";
+    twoDiv.style.borderRadius = "10px";
+    twoDiv.style.marginBottom = "15px";
+    threeDiv.style.backgroundColor = "transparent";
+    threeDiv.style.borderRadius = "0";
+    progressBar.style.width = "20%";
+    stepNumber.innerHTML = "1";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  }
 });
 
-icon3.addEventListener("click", function () {
-  // oneP.style.display = "none";
-  // oneSpan.style.display = "none";
-  // oneButton.style.display = "none";
-  // oneImg.style.display = "none";
-  // twoP.style.display = "none";
-  // twoSpan.style.display = "none";
-  // twoButton.style.display = "none";
-  // twoImg.style.display = "none";
-  threeP.style.display = "none";
-  threeSpan.style.display = "none";
-  threeButton.style.display = "none";
-  threeImg.style.display = "none";
-  fourP.style.display = "block";
-  fourSpan.style.display = "block";
-  fourButton.style.display = "block";
-  fourImg.style.display = "block";
-  threeDiv.style.backgroundColor = "transparent";
-  threeDiv.style.borderRadius = "0";
-  fourDiv.style.backgroundColor = "#F3F3F3";
-  fourDiv.style.borderRadius = "10px";
-  progressBar.style.width = "60%";
-  stepNumber.innerHTML = "3";
+checkbox3.addEventListener("change", function () {
+  if (checkbox3.checked) {
+    threeP.style.display = "none";
+    threeSpan.style.display = "none";
+    threeButton.style.display = "none";
+    threeImg.style.display = "none";
+    fourP.style.display = "block";
+    fourSpan.style.display = "block";
+    fourButton.style.display = "block";
+    fourImg.style.display = "block";
+    threeDiv.style.backgroundColor = "transparent";
+    threeDiv.style.borderRadius = "0";
+    threeDiv.style.marginBottom = "15px";
+    fourDiv.style.backgroundColor = "#F3F3F3";
+    fourDiv.style.borderRadius = "10px";
+    progressBar.style.width = "60%";
+    stepNumber.innerHTML = "3";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  } else {
+    threeP.style.display = "block";
+    threeSpan.style.display = "block";
+    threeButton.style.display = "block";
+    threeImg.style.display = "block";
+    fourP.style.display = "none";
+    fourSpan.style.display = "none";
+    fourButton.style.display = "none";
+    fourImg.style.display = "none";
+    threeDiv.style.backgroundColor = "#F3F3F3";
+    threeDiv.style.borderRadius = "10px";
+    threeDiv.style.marginBottom = "15px";
+    fourDiv.style.backgroundColor = "transparent";
+    fourDiv.style.borderRadius = "0";
+    progressBar.style.width = "40%";
+    stepNumber.innerHTML = "2";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  }
 });
 
-icon4.addEventListener("click", function () {
-  // oneP.style.display = "none";
-  // oneSpan.style.display = "none";
-  // oneButton.style.display = "none";
-  // oneImg.style.display = "none";
-  // twoP.style.display = "none";
-  // twoSpan.style.display = "none";
-  // twoButton.style.display = "none";
-  // twoImg.style.display = "none";
-  // threeP.style.display = "none";
-  // threeSpan.style.display = "none";
-  // threeButton.style.display = "none";
-  // threeImg.style.display = "none";
-  fourP.style.display = "none";
-  fourSpan.style.display = "none";
-  fourButton.style.display = "none";
-  fourImg.style.display = "none";
-  fiveP.style.display = "block";
-  fiveSpan.style.display = "block";
-  fiveButton.style.display = "block";
-  fiveImg.style.display = "block";
-  fourDiv.style.backgroundColor = "transparent";
-  fourDiv.style.borderRadius = "0";
-  fiveDiv.style.backgroundColor = "#F3F3F3";
-  fiveDiv.style.borderRadius = "10px";
-  progressBar.style.width = "80%";
-  stepNumber.innerHTML = "4";
+checkbox4.addEventListener("change", function () {
+  if (checkbox4.checked) {
+    fourP.style.display = "none";
+    fourSpan.style.display = "none";
+    fourButton.style.display = "none";
+    fourImg.style.display = "none";
+    fiveP.style.display = "block";
+    fiveSpan.style.display = "block";
+    fiveButton.style.display = "block";
+    fiveImg.style.display = "block";
+    fourDiv.style.backgroundColor = "transparent";
+    fourDiv.style.borderRadius = "0";
+    fourDiv.style.marginBottom = "15px";
+    fiveDiv.style.backgroundColor = "#F3F3F3";
+    fiveDiv.style.borderRadius = "10px";
+    progressBar.style.width = "80%";
+    stepNumber.innerHTML = "4";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  } else {
+    fourP.style.display = "block";
+    fourSpan.style.display = "block";
+    fourButton.style.display = "block";
+    fourImg.style.display = "block";
+    fiveP.style.display = "none";
+    fiveSpan.style.display = "none";
+    fiveButton.style.display = "none";
+    fiveImg.style.display = "none";
+    fourDiv.style.backgroundColor = "#F3F3F3";
+    fourDiv.style.borderRadius = "10px";
+    fourDiv.style.marginBottom = "15px";
+    fiveDiv.style.backgroundColor = "transparent";
+    fiveDiv.style.borderRadius = "0";
+    progressBar.style.width = "60%";
+    stepNumber.innerHTML = "3";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  }
 });
 
-icon5.addEventListener("click", function () {
-  // oneP.style.display = "none";
-  // oneSpan.style.display = "none";
-  // oneButton.style.display = "none";
-  // oneImg.style.display = "none";
-  // twoP.style.display = "none";
-  // twoSpan.style.display = "none";
-  // twoButton.style.display = "none";
-  // twoImg.style.display = "none";
-  // threeP.style.display = "none";
-  // threeSpan.style.display = "none";
-  // threeButton.style.display = "none";
-  // threeImg.style.display = "none";
-  // fourP.style.display = "none";
-  // fourSpan.style.display = "none";
-  // fourButton.style.display = "none";
-  // fourIivestyle.display = "none";
-  fiveP.style.display = "none";
-  fiveSpan.style.display = "none";
-  fiveButton.style.display = "none";
-  fiveImg.style.display = "none";
-  fiveDiv.style.backgroundColor = "transparent";
-  fiveDiv.style.borderRadius = "0";
-  progressBar.style.width = "100%";
-  stepNumber.innerHTML = "5";
+checkbox5.addEventListener("change", function () {
+  if (checkbox5.checked) {
+    fiveP.style.display = "none";
+    fiveSpan.style.display = "none";
+    fiveButton.style.display = "none";
+    fiveImg.style.display = "none";
+    // fiveP.style.display = "block";
+    // fiveSpan.style.display = "block";
+    // fiveButton.style.display = "block";
+    // fiveImg.style.display = "block";
+    fiveDiv.style.backgroundColor = "transparent";
+    fiveDiv.style.borderRadius = "0";
+    fiveDiv.style.marginBottom = "15px";
+    // fiveDiv.style.backgroundColor = "#F3F3F3";
+    // fiveDiv.style.borderRadius = "10px";
+    progressBar.style.width = "100%";
+    stepNumber.innerHTML = "5";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  } else {
+    fiveP.style.display = "block";
+    fiveSpan.style.display = "block";
+    fiveButton.style.display = "block";
+    fiveImg.style.display = "block";
+    // fiveP.style.display = "none";
+    // fiveSpan.style.display = "none";
+    // fiveButton.style.display = "none";
+    // fiveImg.style.display = "none";
+    fiveDiv.style.backgroundColor = "#F3F3F3";
+    fiveDiv.style.borderRadius = "10px";
+    fiveDiv.style.marginBottom = "15px";
+    // fiveDiv.style.backgroundColor = "transparent";
+    // fiveDiv.style.borderRadius = "0";
+    progressBar.style.width = "80%";
+    stepNumber.innerHTML = "4";
+
+     if (windowWidth < thresholdWidth) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+     }
+  }
 });
 
-// TRYING TO LEARN HOW TO USE ONE BUTTON TO PERFORM TWO FUCNTIONS
 
-function slideIcons() {
-  var icon1 = document.getElementById("icon1");
-  icon1.className = "fa-solid fa-circle-notch";
-  setTimeout(function () {
-    icon1.className = "fa-solid fa-circle-check";
-  }, 100);
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    oneImg.classList.add ("media-query-image")
+  } else {
+    
+  }
 }
 
-function slideIcons2() {
-  var icon1 = document.getElementById("icon2");
-  icon2.className = "fa-solid fa-circle-notch";
-  setTimeout(function () {
-    icon2.className = "fa-solid fa-circle-check";
-  }, 100);
-}
-
-function slideIcons3() {
-  var icon3 = document.getElementById("icon3");
-  icon3.className = "fa-solid fa-circle-notch";
-  setTimeout(function () {
-    icon3.className = "fa-solid fa-circle-check";
-  }, 100);
-}
-
-function slideIcons4() {
-  var icon4 = document.getElementById("icon4");
-  icon4.className = "fa-solid fa-circle-notch";
-  setTimeout(function () {
-    icon4.className = "fa-solid fa-circle-check";
-  }, 100);
-}
-
-function slideIcons5() {
-  var icon5 = document.getElementById("icon5");
-  icon5.className = "fa-solid fa-circle-notch";
-  setTimeout(function () {
-    icon5.className = "fa-solid fa-circle-check";
-  }, 100);
-}
-
-// I WANT TO CHANGE THE 3 ICONS PART TO ACTUAL CIRCULAR CHECKBOX AND ALSO TRY AND UNDERSTAND THE KEYBOARD ACCESSIBILITY ISH
+var x = window.matchMedia("(max-width: 390px)")
+myFunction(x) // Call listener function at run time
