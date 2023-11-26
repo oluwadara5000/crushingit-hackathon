@@ -686,6 +686,10 @@ input:focus {
     display: none;
   }
 
+  .header{
+    padding-top: 25px;
+  }
+
   #mobile-logo {
     display: block;
   }
@@ -789,7 +793,6 @@ input:focus {
     width: 100%;
     margin: auto;
     height: 100vh;
-    /* margin-top: 55px; */
   }
 
   #desktop-logo {
@@ -798,6 +801,10 @@ input:focus {
 
   #mobile-logo {
     display: block;
+  }
+
+  .header{
+    padding-top: 25px;
   }
 
   .logo {
@@ -907,7 +914,6 @@ input:focus {
     width: 100%;
     margin: auto;
     height: 100vh;
-    /* margin-top: 35px; */
   }
 
   #desktop-logo {
@@ -916,6 +922,10 @@ input:focus {
 
   #mobile-logo {
     display: block;
+  }
+
+  .header{
+    padding-top: 25px;
   }
 
   .logo {
