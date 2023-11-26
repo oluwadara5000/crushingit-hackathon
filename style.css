@@ -678,8 +678,8 @@ input:focus {
   section {
     width: 100%;
     margin: auto;
-    height: 844px;
-    /* margin-top: 55px; */
+    height: 800px;
+    margin-top: 55px;
   }
 
   #desktop-logo {
@@ -788,7 +788,8 @@ input:focus {
   section {
     width: 390px;
     margin: auto;
-    height: 844px;
+    height: 800px;
+    margin-top: 55px;
   }
 
   #desktop-logo {
@@ -897,7 +898,7 @@ input:focus {
   section {
     width: 90%;
     margin: auto;
-    /* height: 844px; */
+    margin-top: 35px;
   }
 
   #desktop-logo {
@@ -987,24 +988,6 @@ input:focus {
 
 /*  */
 /*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 /* FOR SCREENS FROM 501px TO 550px */
 @media screen and (min-width: 501px) and (max-width: 550px) {
  input{
@@ -1012,24 +995,6 @@ width: 300px;
  }
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 /*  */
 /*  */
 /* FOR SCREENS FROM 551px TO 600px */
@@ -1041,24 +1006,6 @@ width: 300px;
 
 /*  */
 /*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 /* FOR SCREENS FROM 601px TO 650px */
 @media screen and (min-width: 601px) and (max-width: 650px) {
   input{
@@ -1066,24 +1013,6 @@ width: 300px;
   }
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 /*  */
 /*  */
 /* FOR SCREENS FROM 651px TO 700px */
@@ -1095,30 +1024,9 @@ width: 300px;
 
 /*  */
 /*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 /* FOR SCREENS FROM 701px TO 767px */
 @media screen and (min-width: 701px) and (max-width: 767px) {
   input{
     width: 480px;
   }
 }
-
-/* THE BUTTONS IN THE SEOND CATEGORY NEED LOOKING INTI */
-/* ALSO THE NOTIFICATION AND PROFILE PANEL DIMENSUIONS IN MEDIA QUERIED */
