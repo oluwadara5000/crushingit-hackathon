@@ -85,9 +85,8 @@ threeImg.style.display = "none";
 fourImg.style.display = "none";
 fiveImg.style.display = "none";
 
-var windowWidth = window.innerWidth;
-
-var thresholdWidth = 390
+var x = window.matchMedia("(max-width: 390px)");
+var y = window.matchMedia("(min-width: 391px) and (max-width: 500px)");
 
 progressOpen.addEventListener("click", function () {
   progressClose.style.display = "block";
@@ -100,11 +99,19 @@ progressOpen.addEventListener("click", function () {
   oneDiv.style.backgroundColor = "#F3F3F3";
   oneDiv.style.borderRadius = "10px";
   
-  if (windowWidth < thresholdWidth) {
+  if (x.matches) {
     oneImg.style.display = "none"
     twoImg.style.display = "none"
     threeImg.style.display = "none"
     fourImg.style.display = "none"
+    fiveImg.style.display = "none";
+  }
+
+  if (y.matches) {
+    oneImg.style.display = "none";
+    twoImg.style.display = "none";
+    threeImg.style.display = "none";
+    fourImg.style.display = "none";
     fiveImg.style.display = "none";
   }
 });
@@ -170,7 +177,7 @@ checkbox1.addEventListener("change", function () {
     oneImg.style.display = "none";
     twoP.style.display = "block";
     twoSpan.style.display = "block";
-    twoButton.style.display = "block";
+    twoButton.style.display = "flex";
     twoImg.style.display = "block";
     oneDiv.style.backgroundColor = "transparent";
     oneDiv.style.borderRadius = "0";
@@ -180,7 +187,15 @@ checkbox1.addEventListener("change", function () {
     progressBar.style.width = "20%";
     stepNumber.innerHTML = "1"
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -204,7 +219,15 @@ checkbox1.addEventListener("change", function () {
     progressBar.style.width = "0";
     stepNumber.innerHTML = "0";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -232,7 +255,15 @@ checkbox2.addEventListener("change", function () {
     progressBar.style.width = "40%";
     stepNumber.innerHTML = "2";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -242,7 +273,7 @@ checkbox2.addEventListener("change", function () {
   } else {
     twoP.style.display = "block";
     twoSpan.style.display = "block";
-    twoButton.style.display = "block";
+    twoButton.style.display = "flex";
     twoImg.style.display = "block";
     threeP.style.display = "none";
     threeSpan.style.display = "none";
@@ -256,7 +287,15 @@ checkbox2.addEventListener("change", function () {
     progressBar.style.width = "20%";
     stepNumber.innerHTML = "1";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -284,7 +323,15 @@ checkbox3.addEventListener("change", function () {
     progressBar.style.width = "60%";
     stepNumber.innerHTML = "3";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -308,7 +355,15 @@ checkbox3.addEventListener("change", function () {
     progressBar.style.width = "40%";
     stepNumber.innerHTML = "2";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -336,7 +391,15 @@ checkbox4.addEventListener("change", function () {
     progressBar.style.width = "80%";
     stepNumber.innerHTML = "4";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -360,7 +423,15 @@ checkbox4.addEventListener("change", function () {
     progressBar.style.width = "60%";
     stepNumber.innerHTML = "3";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -388,7 +459,15 @@ checkbox5.addEventListener("change", function () {
     progressBar.style.width = "100%";
     stepNumber.innerHTML = "5";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
@@ -412,7 +491,15 @@ checkbox5.addEventListener("change", function () {
     progressBar.style.width = "80%";
     stepNumber.innerHTML = "4";
 
-     if (windowWidth < thresholdWidth) {
+     if (x.matches) {
+       oneImg.style.display = "none";
+       twoImg.style.display = "none";
+       threeImg.style.display = "none";
+       fourImg.style.display = "none";
+       fiveImg.style.display = "none";
+    }
+    
+     if (y.matches) {
        oneImg.style.display = "none";
        twoImg.style.display = "none";
        threeImg.style.display = "none";
