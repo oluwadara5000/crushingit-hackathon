@@ -13,6 +13,24 @@ body {
   width: 100%;
 }
 
+.attribution{
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.attribution span{
+  color: tomato;
+}
+
+.attribution span:hover{
+  color: #fff;
+}
+
+.attribution a{
+  text-decoration: none;
+}
+
 section {
   width: 1440px;
   margin: auto;
@@ -297,7 +315,6 @@ input:focus {
 }
 
 .round label {
-  /* background-color: red; */
   border: 2.5px dashed black;
   border-radius: 50%;
   height: 22px;
@@ -654,24 +671,6 @@ input:focus {
 /*  */
 /*  */
 /*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 /* MEDIA QUERIES */
 /* FOR SCREENS 390px and BELOW */
 @media screen and (max-width: 390px) {
@@ -679,7 +678,6 @@ input:focus {
     width: 100%;
     margin: auto;
     height: 100vh;
-    /* margin-top: 55px; */
   }
 
   #desktop-logo {
@@ -767,22 +765,6 @@ input:focus {
   }
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 /*  */
 /*  */
 /*  */
@@ -888,22 +870,6 @@ input:focus {
   }
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
 /*  */
 /*  */
 /*  */

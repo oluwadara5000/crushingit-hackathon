@@ -447,15 +447,9 @@ checkbox5.addEventListener("change", function () {
     fiveSpan.style.display = "none";
     fiveButton.style.display = "none";
     fiveImg.style.display = "none";
-    // fiveP.style.display = "block";
-    // fiveSpan.style.display = "block";
-    // fiveButton.style.display = "block";
-    // fiveImg.style.display = "block";
     fiveDiv.style.backgroundColor = "transparent";
     fiveDiv.style.borderRadius = "0";
     fiveDiv.style.marginBottom = "15px";
-    // fiveDiv.style.backgroundColor = "#F3F3F3";
-    // fiveDiv.style.borderRadius = "10px";
     progressBar.style.width = "100%";
     stepNumber.innerHTML = "5";
 
@@ -479,15 +473,9 @@ checkbox5.addEventListener("change", function () {
     fiveSpan.style.display = "block";
     fiveButton.style.display = "block";
     fiveImg.style.display = "block";
-    // fiveP.style.display = "none";
-    // fiveSpan.style.display = "none";
-    // fiveButton.style.display = "none";
-    // fiveImg.style.display = "none";
     fiveDiv.style.backgroundColor = "#F3F3F3";
     fiveDiv.style.borderRadius = "10px";
     fiveDiv.style.marginBottom = "15px";
-    // fiveDiv.style.backgroundColor = "transparent";
-    // fiveDiv.style.borderRadius = "0";
     progressBar.style.width = "80%";
     stepNumber.innerHTML = "4";
 
@@ -508,15 +496,3 @@ checkbox5.addEventListener("change", function () {
      }
   }
 });
-
-
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-    oneImg.classList.add ("media-query-image")
-  } else {
-    
-  }
-}
-
-var x = window.matchMedia("(max-width: 390px)")
-myFunction(x) // Call listener function at run time
