@@ -678,8 +678,8 @@ input:focus {
   section {
     width: 100%;
     margin: auto;
-    height: 800px;
-    margin-top: 55px;
+    height: 100vh;
+    /* margin-top: 55px; */
   }
 
   #desktop-logo {
@@ -786,10 +786,10 @@ input:focus {
 /* FOR SCREENS FROM 391px TO 500px */
 @media screen and (min-width: 391px) and (max-width: 500px) {
   section {
-    width: 390px;
+    width: 100%;
     margin: auto;
-    height: 800px;
-    margin-top: 55px;
+    height: 100vh;
+    /* margin-top: 55px; */
   }
 
   #desktop-logo {
@@ -836,6 +836,10 @@ input:focus {
     gap: 16px;
   }
 
+  .sentence > p:nth-child(1){
+    align-self: self-start;
+  }
+
   .plan div:nth-child(1) p:nth-child(2) {
     align-self: self-start;
   }
@@ -866,10 +870,14 @@ input:focus {
   }
 
   .notification-panel {
-    width: 358px;
+    width: 420px;
     left: 50%;
-    margin-left: -179px;
+    margin-left: -210px;
     top: 72px;
+  }
+
+  .lower{
+    width: 100%;
   }
 }
 
@@ -896,9 +904,10 @@ input:focus {
 /* FOR SCREENS FROM 501px TO 767px */
 @media screen and (min-width: 501px) and (max-width: 767px) {
   section {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    margin-top: 35px;
+    height: 100vh;
+    /* margin-top: 35px; */
   }
 
   #desktop-logo {
@@ -985,6 +994,25 @@ input:focus {
     top: 72px;
   }
 }
+
+/*  */
+/*  */
+/* FOR SCREENS FROM 401px TO 450px */
+@media screen and (min-width: 401px) and (max-width: 450px) {
+ input{
+width: 260px;
+ }
+}
+
+/*  */
+/*  */
+/* FOR SCREENS FROM 451px TO 500px */
+@media screen and (min-width: 451px) and (max-width: 500px) {
+ input{
+width: 290px;
+ }
+}
+
 
 /*  */
 /*  */
